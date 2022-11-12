@@ -1,0 +1,40 @@
+body{
+    display: flax;
+    justify-content: center;
+}
+
+.container{
+    /*background-color:antiquewhite;*/
+   /* height: 100vh; */
+    width: 80%;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.figureforing{
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 200px 0px;
+}
+
+.figure_img{
+    width: 200px;
+
+}
+
+@media screen and (max-width:820px) and (min-width:390px) {
+    .figureforing{
+        width: 50%;
+    }
+}
+@media screen and (max-width:550px) {
+    .figureforing{
+        width: 100%;
+    }
+    .container{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
